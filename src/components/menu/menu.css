@@ -17,8 +17,7 @@
   }
   
   .esquerdo p {
- 
-    text-orientation: mixed; 
+
     margin: 100px;
     font-size: 3.5rem;
     font-weight: 400;
@@ -93,19 +92,23 @@
       gap: 20px;
       height: auto;
       padding: 20px;
+      
     }
   
     .esquerdo {
       width: 100%;
       align-items: center;
       gap: 20px;
+      
     }
   
     .esquerdo p {
+      
       font-size: 4rem;
       text-align: center;
       margin: 0;
     }
+    
   
     .main {
       margin-left: 5%;

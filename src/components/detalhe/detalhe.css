@@ -1,46 +1,48 @@
-
 .logo {
-    display: flex;
-    background-color: #0097b2;
-    padding: 50px;
-    gap: 200px;
-    height: 130px;
-  }
-  
-  .esquerdo {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    gap: 50px;
-    justify-content: center;
-  }
-  
-  .esquerdo p {
- 
-    text-orientation: mixed; 
-    margin: 100px;
-    font-size: 3.5rem;
-    font-weight: 400;
-    color: #fffbfb;
-  }
+  display: flex;
+  background-color: #0097b2;
+  padding: 50px;
+  gap: 200px;
+  height: 130px;
+
+}
+
+.esquerdo {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 50px;
+  justify-content: center;
+}
+
+.esquerdo p {
+
+  margin: 100px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #fffbfb;
+}
 
 .container {
   padding-top: 100px;
   display: flex;
   padding-left: 10px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .move {
-  margin: 12px;
+  margin-left: -300px;
   padding-top: 20px;
 }
 
 .img {
-  width: 300px;
-  height: 300px;
+  width: 450px;
+  height: 400px;
   background-color: #c1c500;
   padding-right: 20px 20px;
-  padding-top: 10px;
+  padding-top: 15px;
+  margin-top: 50px;
+  border-radius: 30px;
 }
 
 .container2 {
@@ -49,13 +51,18 @@
   margin-top: 200px;
   gap: 20px;
 }
-.preco{
-    font-size: large;
-    
+
+.preco {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #c1c500;
+  border-radius: 15px;
 }
+
 .buttons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .button {
@@ -65,10 +72,92 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
   height: 45px;
+  width: 180px;
 }
 
 .buttons > button:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .logo {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      height: auto;
+      padding: 30px;
   }
+
+  .esquerdo p {
+      margin: 50px;
+      font-size: 2.5rem;
+  }
+
+  .container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+  }
+
+  .move {
+      margin-left: 0;
+      padding-top: 10px;
+  }
+
+  .img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+  }
+
+  .container2 {
+      margin-top: 100px;
+      gap: 10px;
+  }
+
+  .buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .logo {
+      padding: 20px;
+  }
+
+  .esquerdo p {
+      margin: 20px;
+      font-size: 2rem;
+  }
+
+  .container {
+      padding-top: 20px;
+  }
+
+  .img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+  }
+
+  .container2 {
+      margin-top: 50px;
+  }
+
+  .preco {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .button {
+      width: 100%;
+      font-size: 14px;
+  }
+}

@@ -39,7 +39,9 @@ function Detalhe() {
           </button>
         </div>
       </div>
+    
     </div>
+    
   );
 }
 
