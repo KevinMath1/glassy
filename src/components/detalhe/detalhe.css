@@ -74,7 +74,7 @@
   width: 180px;
 }
 
-.buttons > button:hover {
+.button:hover {
   cursor: pointer;
   background-color: black;
   color: white;
