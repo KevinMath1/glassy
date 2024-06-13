@@ -27,7 +27,7 @@
   padding-top: 100px;
   display: flex;
   padding-left: 10px;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  flex-wrap: wrap;
 }
 
 .move {
@@ -62,8 +62,7 @@
 .buttons {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-}
+  flex-wrap: wrap; 
 
 .button {
   border-radius: 10px;
@@ -81,9 +80,7 @@
   color: white;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Tablets */
+}
 @media (max-width: 1200px) {
   .logo {
       flex-direction: column;
@@ -126,7 +123,7 @@
   }
 }
 
-/* Mobile Phones */
+
 @media (max-width: 480px) {
   .logo {
       padding: 20px;
